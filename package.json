@@ -2,9 +2,12 @@
   "name": "practicas-coder",
   "version": "1.0.0",
   "description": "\"Ejercitaciones del curso de coder\"",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "node": "node index.js"
+
   },
   "keywords": [],
   "author": "Lucas Ruggirello",

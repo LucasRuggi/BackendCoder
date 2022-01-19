@@ -1,8 +1,8 @@
 const Contenedor = require("./clases/contenedor");
-const carrito = new Contenedor("productos");
+const bolsa = new Contenedor("productos");
 
 // Producto 1
-carrito
+bolsa
   .save({
     titulo: "Fideos",
     precio: 149,
@@ -10,7 +10,7 @@ carrito
   })
   .then(() =>
     // Producto 2
-    carrito
+    bolsa
       .save({
         titulo: "Sal",
         precio: 99,
@@ -18,7 +18,7 @@ carrito
       })
       .then(() =>
         // Producto 3
-        carrito.save({
+        bolsa.save({
           titulo: "Pure de tomate",
           precio: 300,
           img: "https://walmartar.vteximg.com.br/arquivos/ids/859003-1000-1000/Pure-De-Tomate-La-Campagnola-520-Gr-1-15146.jpg?v=637196546200930000",
@@ -27,15 +27,15 @@ carrito
   );
 
 // Producto en base al ID
-//carrito.getById(2).then((data) => console.log(data));
-//carrito.getById(152).then((data) => console.log(data));
+//bolsa.getById(2).then((producto) => console.log(producto));
+//bolsa.getById(152).then((producto) => console.log(producto));
 
 // Borrar por ID
-//carrito.deleteById(1).then((data) => console.log(data));
-//carrito.deleteById(152).then((data) => console.log(data));
+//bolsa.deleteById(1).then((producto) => console.log(producto));
+//bolsa.deleteById(152).then((producto) => console.log(producto));
 
 // Buscar todos los productos
-//carrito.getAll().then((data) => console.log(data));
+//bolsa.getAll().then((producto) => console.log(producto));
 
 // Borrar todos los productos
-//carrito.deleteAll().then((data) => console.log(data));
+//bolsa.deleteAll().then((producto) => console.log(producto));

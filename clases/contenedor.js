@@ -77,13 +77,12 @@ class Contenedor {
       if (!producto) {
         throw new Error();
       }
-      return { status: "Success", data: producto };
+      return producto;
     } catch (err) {
       return {
         status: "Error",
         message: "No se encontro el producto solicitado.",
         error: err,
-        data: null,
       };
     }
   }
@@ -96,7 +95,7 @@ class Contenedor {
         "utf-8"
       );
       let productos = JSON.parse(res);
-      return { status: "Success", data: productos };
+      return productos;
     } catch (err) {
       return {
         status: "Error",
