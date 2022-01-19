@@ -27,15 +27,15 @@ carrito
   );
 
 // Producto en base al ID
-carrito.getById(2).then((data) => console.log(data));
-carrito.getById(152).then((data) => console.log(data));
+//carrito.getById(2).then((data) => console.log(data));
+//carrito.getById(152).then((data) => console.log(data));
 
 // Borrar por ID
-carrito.deleteById(1).then((data) => console.log(data));
-carrito.deleteById(152).then((data) => console.log(data));
+//carrito.deleteById(1).then((data) => console.log(data));
+//carrito.deleteById(152).then((data) => console.log(data));
 
 // Buscar todos los productos
-carrito.getAll().then((data) => console.log(data));
+//carrito.getAll().then((data) => console.log(data));
 
 // Borrar todos los productos
-carrito.deleteAll().then((data) => console.log(data));
+//carrito.deleteAll().then((data) => console.log(data));
